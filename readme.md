@@ -4,13 +4,9 @@ This repository provides a template for creating web app with login credentials 
 
 This Login Page uses Express API as communication channel with data base
 
-<hr>
-
 ## Pictorial Representation
 
 ![FlowChart](flowchart.png)
-
-<hr>
 
 ## Getting Started
 
@@ -31,7 +27,6 @@ Run file named `dbConn.js` in src folder
     node ./dbConn.js
 
 come to root directory and start live server make sure to use `http://localhost:port` instead `http://127.0.0.1:port` which may cause CORS error
-<hr>
 
 ## API Endpoints
 > 1. `http://localhost:3000/users`
@@ -59,8 +54,6 @@ come to root directory and start live server make sure to use `http://localhost:
 >>    Method: patch<br>
 >>    Description: Update Password for User Email sent form body of request
 
-<hr>
-
 ## Using This Template In GitHub Pages
 
 Currently this template is NOT configured to work on GitHub pages. The easiest way to use this template is by cloning this repo and using it as a starting point for your own project. 
@@ -85,8 +78,6 @@ Currently this template is NOT configured to work on GitHub pages. The easiest w
 * Enable the GitHub pages web site by going to "Settings". In the "GitHub Pages" section, select "Master Branch /docs folder" and click the save button.
 * GitHub will display a URL to your documentation web site. You will need to add "api-docs/" to this path to access the web site.
 * You can add the link to this web page on the "code" tab of your repository (see this repo for an example). Go to the "code" tab of your repository, and click the "edit" button toward the top of the page. Enter the URL to your documentation (remember to add "api-docs/") in the "website" box, and add your own description in the "Description" box. Click save. You should see the link at the top of the "code" tab.
-
-<hr>
 
 ## Helping me improve
 Please feel free to add issues and pull requests for any recommendations you think would be worthwhile for all users of the template.
