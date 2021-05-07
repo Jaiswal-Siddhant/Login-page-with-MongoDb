@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register User</title>
+
+    <link rel="stylesheet" href="./register.css">
+
+    <!-- JQuery Link -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" charset="utf-8"></script>
+
+    <!-- SweetAlert2 Link -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10.16.7/dist/sweetalert2.all.min.js"></script>
+
+</head>
+<body>
+    <form class="register-form">
+        <h1>Register</h1>
+
+        <div class="txtb">
+            <input type="email" id="mail">
+            <span data-placeholder="Email"></span>
+        </div>
+
+        <div class="txtb">
+            <input type="password" id="newPass">
+            <span data-placeholder="Password"></span>
+        </div>
+
+        <div class="txtb">
+            <input type="password" id="confPass">
+            <span data-placeholder="Confirm Password"></span>
+        </div>
+
+        <button type="submit" class="registerBtn" id="btnRegister">Register</button>
+
+        <div class="bottom-text">Already have an account? <a href="../index.html">Sign in</a>
+        </div>
+    </form>
+    <script type="text/javascript">
+        $(".txtb input").on("focus", function () {
+            $(this).addClass("focus");
+        });
+
+        $(".txtb input").on("blur", function () {
+            if ($(this).val() == "")
+                $(this).removeClass("focus");
+        });
+
+    </script>
+</body>
+
+<script src="register.js"></script>
+
+<!-- Ignore this shit -->
+<script src="//cdn.jsdelivr.net/npm/promise-polyfill@8/dist/polyfill.js"></script>
+</html>

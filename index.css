@@ -1,0 +1,108 @@
+*{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  font-family: montserrat;
+  box-sizing: border-box;
+}
+
+body{
+  min-height: 100vh;
+  background-image: linear-gradient(120deg,#3498db,#cc83eb);
+}
+
+.login-form{
+  width: 400px;
+  background: #f1f1f1;
+  height: 500px;
+  padding: 80px 40px;
+  border-radius: 10px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.login-form h1{
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.txtb{
+  border-bottom: 2px solid #adadad;
+  position: relative;
+  margin: 30px 0;
+}
+
+.forgot-password{
+  /* width: 1001px; */
+  /* right: 0; */
+  margin-top: 20px;
+  text-align: right;
+  font-size: 15px;
+}
+
+.txtb input{
+  font-size: 15px;
+  color: #333;
+  border: none;
+  width: 100%;
+  outline: none;
+  background: none;
+  padding: 0 5px;
+  height: 40px;
+}
+
+.txtb span::before{
+  content: attr(data-placeholder);
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  color: #adadad;
+  transform: translateY(-75%);
+  z-index: -1;
+  transition: .5s;
+}
+
+.txtb span::after{
+  margin-top: 40px;
+  left:40px;
+  content: '';
+  position: fixed;
+  width: 0%;
+  height: 2px;
+  background: linear-gradient(120deg,#3498db,#cc83eb);
+  transition: .5s;
+}
+
+.focus + span::before{
+  top: -5px;
+}
+.focus + span::after{
+  width: 80%;
+}
+
+.logbtn{
+  display: block;
+  width: 100%;
+  height: 50px;
+  font-size: 17px;
+  border: none;
+  background: linear-gradient(120deg,#3498db,#cc83eb,#3498db);
+  background-size: 200%;
+  color: #fff;
+  outline: none;
+  cursor: pointer;
+  transition: .5s;
+  border-radius: 8px;
+}
+
+.logbtn:hover{
+  background-position: right;
+}
+
+.bottom-text{
+  margin-top: 40px;
+  text-align: center;
+  font-size: 16px;
+}

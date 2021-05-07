@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forgot Password</title>
+
+    <!-- JQuery link -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" charset="utf-8"></script>
+
+    <!-- SweetAlert2 link -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10.16.7/dist/sweetalert2.all.min.js"></script>
+
+    <!-- Stylesheet link -->
+    <link rel="stylesheet" href="forgot.css">
+</head>
+
+<body>
+    <form class="register-form initial">
+        <h1>Change Password</h1>
+
+        <div class="txtb" id="inputLable">
+            <input type="email" id="email">
+            <span data-placeholder="Email"></span>
+        </div>
+
+        <div id="wrapper" style="display: none;">
+            <div class="txtb passwd">
+                <input type="password" id="passwd">
+                <span data-placeholder="Password"></span>
+            </div>
+
+            <div class="txtb passwd">
+                <input type="password" id="confPass">
+                <span data-placeholder="Confirm Password"></span>
+            </div>
+        </div>
+        <button type="submit" class="registerBtn" id="btnSubmit">Submit</button>
+
+        <div class="bottom-text">Already know account details? <a href="../index.html">Sign in</a>
+        </div>
+    </form>
+    <script type="text/javascript">
+        $(".txtb input").on("focus", function () {
+            $(this).addClass("focus");
+        });
+
+        $(".txtb input").on("blur", function () {
+            if ($(this).val() == "")
+                $(this).removeClass("focus");
+        });
+
+    </script>
+</body>
+
+<script src="forgot.js"></script>
+
+</html>
