@@ -20,7 +20,7 @@ Initialize node
 
 Install Express, mongoose, cors, body-parser
 
-    npm i express mongoose cors body-parse --save
+    npm i express mongoose cors body-parse validator --save
 
 Run file named `dbConn.js` in src folder
 
