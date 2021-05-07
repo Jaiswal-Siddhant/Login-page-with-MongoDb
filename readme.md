@@ -16,7 +16,7 @@ This Login Page uses Express API as communication channel with data base
 
 Firstly, go to src folder
 
-    cd public/src
+    cd src
 
 Initialize node
 
