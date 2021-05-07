@@ -33,22 +33,22 @@ Run file named `dbConn.js` in src folder
 come to root directory and start live server make sure to use `http://localhost:port` instead `http://127.0.0.1:port` which may cause CORS error
 <hr>
 
->## API Endpoints
->> 1. `http://localhost:3000/users`
->>>   Method: get<br>
->>>   Description: Get All Users
->> 2. `http://localhost:3000/users`
->>>    Method: post<br>
->>>    Description: Create user entry in DB
->> 3. `http://localhost:3000/user/:query`
->>>    Method: get<br>
->>>    Description: Get Specific user from DB
->> 4. `http://localhost:3000/users/:key`
->>>    Method: patch<br>
->>>    Description: Update a user
->> 5. `http://localhost:3000/users`
->>>    Method: delete<br>
->>>    Description: Delete User from DB {request is stored in body}
+## API Endpoints
+> 1. `http://localhost:3000/users`
+>>   Method: get<br>
+>>   Description: Get All Users
+> 2. `http://localhost:3000/users`
+>>    Method: post<br>
+>>    Description: Create user entry in DB
+> 3. `http://localhost:3000/user/:query`
+>>    Method: get<br>
+>>    Description: Get Specific user from DB
+> 4. `http://localhost:3000/users/:key`
+>>    Method: patch<br>
+>>    Description: Update a user
+> 5. `http://localhost:3000/users`
+>>    Method: delete<br>
+>>    Description: Delete User from DB {request is stored in body}
 > 6. `http://localhost:3000/verify/:EmailQuery`
 >>    Method: get<br>
 >>    Description: Get Email and Password from DB
